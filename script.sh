@@ -9,4 +9,4 @@ sed -r 's%;%,%g' out.5 > out.6   #Cambia ; por ,
 sed 's/,/./4' out.6 > out.7     #Separador decimal por.
 tr '[:lower:]' '[:upper:]' < out.7 > out.8   #Mayusculas
 grep -v \\N  out.8 > resultado.csv  #Elimina Nulos
-rm out.*     #elimina intermedios     
+rm out.*     #elimina intermedio
